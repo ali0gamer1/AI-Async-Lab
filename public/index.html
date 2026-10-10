@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Async Lab · TypeScript</title>
+  <link rel="stylesheet" href="/hljs.css" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>⚡ Async Lab <small>blocking vs async, side by side</small></h1>
+    <div class="how">
+      Each run executes <b>on the server's single main thread</b>. While it runs, this page pings that thread every 100&nbsp;ms.
+      <span class="legend"><i class="ok"></i>answered fast <i class="slow"></i>slow <i class="bad"></i>frozen</span>
+    </div>
+  </header>
+  <div class="layout">
+    <nav id="nav"></nav>
+    <main id="main"><p class="muted">Loading labs…</p></main>
+  </div>
+  <script type="module" src="/build/client/app.js"></script>
+</body>
+</html>
